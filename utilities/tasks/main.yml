@@ -2,3 +2,12 @@
 # tasks file for utilities
 - name: install vim
   import_tasks: install-vim.yml
+
+- name: install git
+  import_tasks: install-git.yml
+
+- name: install vb-guest
+  import_tasks: install-vb-guest.yml
+
+- name: install network
+  import_tasks: install-network.yml
