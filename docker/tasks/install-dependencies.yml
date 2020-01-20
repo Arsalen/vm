@@ -1,0 +1,11 @@
+# Install packages to allow apt to use a repository over HTTPS
+- apt:
+    name: "{{ item }}"
+    state: latest
+    update_cache: yes
+  with_items:
+        - 'apt-transport-https'
+        - 'ca-certificates'
+        - 'curl'
+        - 'gnupg-agent'
+        - 'software-properties-common'

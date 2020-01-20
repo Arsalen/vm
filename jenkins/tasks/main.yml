@@ -1,0 +1,7 @@
+---
+# tasks file for jenkins
+- name: install java
+  import_tasks: install-java.yml
+
+- name: install jenkins
+  import_tasks: install-jenkins.yml

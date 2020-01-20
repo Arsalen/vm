@@ -1,0 +1,4 @@
+---
+# tasks file for utilities
+- name: install vim
+  import_tasks: install-vim.yml

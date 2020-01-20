@@ -1,0 +1,8 @@
+---
+# tasks file for nodeJs
+  - name: install node
+    import_tasks: install-node.yml
+  - name: install yarn
+    import_tasks: install-yarn.yml
+  - name: install nvm
+    import_tasks: install-nvm.yml

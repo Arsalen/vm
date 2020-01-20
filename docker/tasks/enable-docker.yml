@@ -1,0 +1,4 @@
+# Enbale docker deamon
+- systemd:
+    name: docker
+    enabled: yes

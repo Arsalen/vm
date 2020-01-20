@@ -1,0 +1,19 @@
+---
+# tasks file for docker
+- name: install aptitude
+  import_tasks: install-aptitude.yml
+
+- name: install dependencies
+  import_tasks: install-dependencies.yml
+
+- name: install docker
+  import_tasks: install-docker.yml
+
+- name: post install docker
+  import_tasks: post-install-docker.yml
+
+- name: install docker-compose
+  import_tasks: install-docker-compose.yml
+
+- name: enable docker
+  import_tasks: enable-docker.yml
