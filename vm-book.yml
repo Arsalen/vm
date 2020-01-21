@@ -1,11 +1,11 @@
 ---
   - hosts: master
     roles:
-      #- utilities
-      #- IDEs
-      #- DBs
-      #- nodeJs
+      - utilities
+      - IDEs
+      - DBs
+      - nodeJs
       - java
-      #- docker
-      #- jenkins
+      - docker
+      - jenkins
 ...
