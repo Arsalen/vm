@@ -1,0 +1,16 @@
+---
+# tasks file for DBs
+- name: install mysql
+  import_tasks: install-mysql.yml
+
+- name: install postgresql
+  import_tasks: install-postgresql.yml
+
+- name: install sqlite
+  import_tasks: install-sqlite.yml
+
+- name: install redis
+  import_tasks: install-redis.yml
+
+- name: install mongodb
+  import_tasks: install-mongodb.yml

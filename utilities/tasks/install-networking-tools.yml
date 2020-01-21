@@ -1,0 +1,9 @@
+---
+
+- apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - 'rpcbind'
+    - 'openssh-server'
+    - 'nmap'

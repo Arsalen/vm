@@ -1,0 +1,14 @@
+---
+
+- apt:
+    name: redis-server
+    state: present
+
+- lineinfile:
+    path: /etc/redis/redis.conf
+    regexp: 'supervised no'
+    line: supervised systemd
+
+- systemd:
+    state: restarted
+    name: redis

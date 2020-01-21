@@ -1,0 +1,11 @@
+---
+# tasks file for IDEs
+
+- name: install vim
+  import_tasks: install-vim.yml
+
+- name: install atom
+  import_tasks: install-atom.yml
+
+- name: install vscode
+  import_tasks: install-vscode.yml

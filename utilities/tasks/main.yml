@@ -1,13 +1,74 @@
 ---
 # tasks file for utilities
-- name: install vim
-  import_tasks: install-vim.yml
+
+- name: install make
+  apt:
+    name: make
+    state: present
+
+- name: install gcc
+  apt:
+    name: gcc
+    state: present
+
+- name: install g++
+  apt:
+    name: g++
+    state: present
+
+- name: install build essential
+  apt:
+    name: build-essential
+    state: present
+
+- name: install dkms
+  apt:
+    name: dkms
+    state: present
+
+- name: install software properties common
+  apt:
+    name: software-properties-common
+    state: present
+
+- name: install apt transport https
+  apt:
+    name: apt-transport-https
+    state: present
+
+- name: install wget
+  apt:
+    name: wget
+    state: present
+
+- name: install curl
+  apt:
+    name: curl
+    state: present
 
 - name: install git
-  import_tasks: install-git.yml
+  apt:
+    name: git
+    state: present
 
-- name: install vb-guest
-  import_tasks: install-vb-guest.yml
+- name: install tree
+  apt:
+    name: tree
+    state: present
 
-- name: install network
-  import_tasks: install-network.yml
+- name: install atop
+  apt:
+    name: atop
+    state: present
+
+- name: install vb-guest tools
+  import_tasks: install-vb-guest-tools.yml
+
+- name: install networking tools
+  import_tasks: install-networking-tools.yml
+
+- name: install monitoring tools
+  import_tasks: install-monitoring-tools.yml
+
+- name: install media tools
+  import_tasks: install-media-tools.yml
