@@ -1,7 +1,9 @@
 ---
-  - hosts: master
+  - hosts: vm
     roles:
       - nodeJs
+      - python
+      - java
       - docker
       - jenkins
 ...
