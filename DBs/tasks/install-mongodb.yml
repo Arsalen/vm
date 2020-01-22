@@ -3,3 +3,4 @@
 - apt:
     name: mongodb-server
     state: present
+    update_cache: yes

@@ -3,6 +3,7 @@
 - apt:
     name: "{{ item }}"
     state: present
+    update_cache: yes
   with_items:
     - 'dkms'
     - 'build-essential'
@@ -11,6 +12,7 @@
 - apt:
     name: "{{ item }}"
     state: present
+    update_cache: yes
   with_items:
     - 'virtualbox-guest-utils'
     - 'virtualbox-guest-dkms'

@@ -10,3 +10,4 @@
 - apt:
     name: yarn
     state: present
+    update_cache: yes

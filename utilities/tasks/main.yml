@@ -1,65 +1,82 @@
 ---
 # tasks file for utilities
 
+- apt:
+    name: aptitude
+    state: latest
+    update_cache: yes
+    
 - name: install make
   apt:
     name: make
     state: present
+    update_cache: yes
 
 - name: install gcc
   apt:
     name: gcc
     state: present
+    update_cache: yes
 
 - name: install g++
   apt:
     name: g++
     state: present
+    update_cache: yes
 
 - name: install build essential
   apt:
     name: build-essential
     state: present
+    update_cache: yes
 
 - name: install dkms
   apt:
     name: dkms
     state: present
+    update_cache: yes
 
 - name: install software properties common
   apt:
     name: software-properties-common
     state: present
+    update_cache: yes
 
 - name: install apt transport https
   apt:
     name: apt-transport-https
     state: present
+    update_cache: yes
 
 - name: install wget
   apt:
     name: wget
     state: present
+    update_cache: yes
 
 - name: install curl
   apt:
     name: curl
     state: present
+    update_cache: yes
 
 - name: install git
   apt:
     name: git
     state: present
+    update_cache: yes
 
 - name: install tree
   apt:
     name: tree
     state: present
+    update_cache: yes
 
 - name: install atop
   apt:
     name: atop
     state: present
+    update_cache: yes
 
 - name: install vb-guest tools
   import_tasks: install-vb-guest-tools.yml

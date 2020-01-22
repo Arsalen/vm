@@ -5,6 +5,7 @@
   apt:
     name: software-properties-common
     state: present
+    update_cache: yes
 
 - name: add repository
   apt_repository:
@@ -15,6 +16,7 @@
   apt:
     name: "{{ item }}"
     state: present
+    update_cache: yes
   with_items:
     - 'python3.7'
     - 'python3.7-dev'

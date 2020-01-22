@@ -3,6 +3,7 @@
 - apt:
     name: "{{ item }}"
     state: present
+    update_cache: yes
   with_items:
     - 'software-properties-common'
     - 'apt-transport-https'
@@ -19,3 +20,4 @@
 - apt:
     name: code
     state: present
+    update_cache: yes

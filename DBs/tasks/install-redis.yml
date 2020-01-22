@@ -3,6 +3,7 @@
 - apt:
     name: redis-server
     state: present
+    update_cache: yes
 
 - lineinfile:
     path: /etc/redis/redis.conf
