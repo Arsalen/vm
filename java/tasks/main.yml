@@ -1,8 +1,10 @@
 ---
+# tasks file for java
 
 - name: Define java_packages.
   set_fact:
     java_packages: "{{ __java_packages | list }}"
+  when: java_packages is not defined
 
 - name: setup
   include_tasks: setup.yml

@@ -1,4 +1,5 @@
 ---
 # vars file for java
+
 __java_packages:
-  - openjdk-11-jdk
+  - openjdk-8-jdk

@@ -1,10 +1,11 @@
 ---
-  - hosts: master
+  - hosts: vm
     roles:
       - utilities
       - IDEs
       - DBs
       - nodeJs
+      - python
       - java
       - docker
       - jenkins
