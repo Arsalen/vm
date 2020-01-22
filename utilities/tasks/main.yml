@@ -78,9 +78,6 @@
     state: present
     update_cache: yes
 
-- name: install vb-guest tools
-  import_tasks: install-vb-guest-tools.yml
-
 - name: install networking tools
   import_tasks: install-networking-tools.yml
 
